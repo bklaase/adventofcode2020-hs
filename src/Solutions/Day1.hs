@@ -1,6 +1,5 @@
 module Solutions.Day1 where
 
-import System.IO
 import qualified AoC.Lib as L
 
 day1 = L.Solution 1 parse part1 part2

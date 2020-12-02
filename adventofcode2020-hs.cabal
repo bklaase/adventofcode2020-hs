@@ -20,6 +20,7 @@ executable adventofcode2020-hs
 library
   exposed-modules:     AoC.Lib
                        Solutions.Day1
+                       Solutions.Day2
   build-depends:       base ^>=4.14.1.0,
                        time ^>=1.9.3,
                        array ^>=0.5.4.0
