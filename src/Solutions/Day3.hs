@@ -1,6 +1,5 @@
 module Solutions.Day3 where
 
-import Text.ParserCombinators.ReadP
 import qualified AoC.Lib as L
 
 day3 = L.Solution 3 parse part1 part2

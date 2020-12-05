@@ -9,21 +9,14 @@ common common
   build-depends:       base ^>=4.14.1.0,
                        adventofcode2020-hs
 
-executable adventofcode2020-hs
-  main-is:             Main.hs
-  -- other-modules:
-  -- other-extensions:
-  build-depends:       base >=4.14 && <4.15
-  -- hs-source-dirs:
-  default-language:    Haskell2010
-
 library
   exposed-modules:     AoC.Lib
                        Solutions.Day1
                        Solutions.Day2
-  build-depends:       base ^>=4.14.1.0,
-                       time ^>=1.9.3,
-                       array ^>=0.5.4.0
+  build-depends:       array ^>=0.5.4.0,
+                       base ^>=4.14.1.0,
+                       text ^>= 1.2.3.2,
+                       time ^>=1.9.3
   default-language:    Haskell2010
   hs-source-dirs:      ./src
 
@@ -38,5 +31,5 @@ executable test
   hs-source-dirs:      ./test
   main-is:             Spec.hs
   other-modules:       Solutions.Day1Spec,
-  build-depends:       hspec ^>=2.7.4,
-                       array ^>=0.5.4.0
+  build-depends:       array ^>=0.5.4.0,
+                       hspec ^>=2.7.4,
